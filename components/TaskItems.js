@@ -26,28 +26,3 @@ const TaskItems = (props) => {
 }
 export default TaskItems
 
-// import React from 'react';
-// import styles from '@/components/TaskItems.module.css';
-
-// const TaskItems = (props) => {
-//   return (
-//     <div>
-//       <h1 className={styles.h}>Tasks</h1>
-//       <div>
-//         {props.val.map((task, idx) => (
-//           <div key={idx} className={styles.task}>
-//             <p className={styles.p}>{task}</p>
-//             <button
-//               className={styles.btn}
-//               onClick={() => props.onRemove(idx)}
-//             >
-//               Remove task
-//             </button>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TaskItems;

@@ -58,37 +58,6 @@ const TaskInput = () => {
         )
   }
 
-  //To uppercase for selected id
-  // const upperCaseHandler = (idToMark) => {
-  //   setTask((prevTask)=>
-  //         prevTask.map((task)=>{
-  //               if(task.id===idToMark){
-  //              return {
-  //               ...task,
-  //               title:task.title.toUpperCase(),
-  //               desc:task.desc.toUpperCase()
-  //              }
-  //               }
-  //               else {
-  //                 return task;
-  //               }
-  //         })
-  //       )
-  // }
-
-  //for all to uppercase
-  // const upperCaseHandler = () => {
-  //   setTask((prevTask)=>
-  //         prevTask.map((task)=>{
-  //              return {
-  //               ...task,
-  //               title:task.title.toUpperCase(),
-  //               desc:task.desc.toUpperCase()
-  //              }
-  //               
-  //         })
-  //       )
-  // }
 
   return (
     <>
@@ -110,69 +79,4 @@ const TaskInput = () => {
 
 export default TaskInput
 
-// import React, { useState } from 'react'
-// import styles from '@/components/TaskInput.module.css'
-// import TaskItems from './TaskItems'
 
-// const TaskInput = () => {
-//   const [title, setTitle] = useState('');
-//   const[desc,setDesc] = useState('');
-//    const [task, setTask] = useState([]);
-//   const changeHandler=(e)=>{
-//        setTitle(e.target.value);
-//        e.preventDefault();
-//   }
-//   const changeHandlerdesc=(e)=>{
-//        setDesc(e.target.value);
-//        e.preventDefault();
-//   }
-//    const addhandlerTask =()=>{
-//          if(title.trim()!='' && desc.trim()!='' ){
-//             setTask([...task,{title,desc}]);
-//             setTitle('');
-//             setDesc('');
-//          }
-//     }
-    
-//    //   const removeHandler=(indexToRemove)=>{
-//    //   setTask(task.filter((_,idx)=>idx!==indexToRemove))}
-     
-//      const deleteHandler = (idx) =>{
-//       setTask(task=>task.filter((_,i)=>{
-//         // Implicit return   
-//         (i!==idx);
-//         // Explicit return
-//               //  return i !== idx;
-//       }));
-//      }
-//     //  const deleteHandler = (idx) =>{
-//     //   let copytask = [...task];
-//     //   copytask.splice(idx,1);
-//     //   setTask(copytask);
-//     //  }
-
-//   return (
-    
-//     <><div className={styles.container}>
-//          <div className={styles.add}>
-//         <input className={styles.input1} onChange={changeHandler} value={title} placeholder='Title of Task'/>
-//         <input className={styles.input1} onChange={changeHandlerdesc} value={desc} placeholder='Write description of task'/>
-//      <button className={styles.button} onClick={addhandlerTask}>Add task</button> 
-//         </div>
-//     </div>
-//    {task.length === 0 ? (
-//         <h2 style={{ textAlign: 'center', color: 'black'}}>No Task Available</h2>
-//       ) : (
-//         <TaskItems val={task} onRemove={deleteHandler} />
-//       )}
-//       {/* if(task.length {'<'} 1){
-//   <h2 style={{ textAlign: 'center', color: 'black'}}>No Task Available</h2>
-//       }  else{
-//          <TaskItems val={task} onRemove={removeHandler} />
-//       } */}
-//     </>
-//   )
-// }
-
-
-// export default TaskInput
