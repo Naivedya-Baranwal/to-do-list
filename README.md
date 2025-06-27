@@ -19,10 +19,9 @@ A simple and elegant To-Do List application built with **Next.js** that allows u
 
 ---
 
-## 📸 UI Preview
+## 🌐 Live Demo
 
-![To-Do List App Screenshot](./path/to/screenshot.png)
-> Replace with actual path or upload a hosted image.
+👉 [Click here to try the app live](https://to-do-list-naivedya-baranwals-projects.vercel.app/)
 
 ---
 
